@@ -10,13 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-svg-sprite": "^2.0.3",
     "surge": "^0.23.1"
   },
   "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.5"

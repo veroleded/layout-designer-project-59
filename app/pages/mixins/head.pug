@@ -1,0 +1,15 @@
+mixin head(title)
+  doctype html
+  html
+    head
+      meta(charset='UTF-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0')
+      meta(rel='icon' type='image/x-icon' href='./images/icons/logo.svg')
+
+      title= title 
+
+      link(rel='stylesheet' href='./styles/app.css')
+    
+    body.bg-gray.vh-100.p-4
+
+      block
