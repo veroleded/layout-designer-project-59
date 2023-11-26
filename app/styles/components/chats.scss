@@ -3,12 +3,6 @@
   @include hide-scrollbar()
 }
 
-.chat-body {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .chat {
   width: 100%;
   transition: all 0.2s linear;
