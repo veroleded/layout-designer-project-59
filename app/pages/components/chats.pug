@@ -1,0 +1,37 @@
+include ../mixins/left-side-body-header
+
+-
+  var chats = [
+    {
+      name: "Вениамин Редакторович",
+      message: "o_O",
+      time: "11:45",
+      avatar: "/images/avatar_4.jpg"
+    },
+    {
+      name: "Вениамин Редакторович",
+      message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      time: "10:12",
+      avatar: "/images/avatar_5.jpg"
+    },
+    {
+      name: "Алексей Примадонин",
+      message: "Тесты упали >_<",
+      time: "08:53",
+      avatar: "/images/avatar_6.jpg"
+    },
+  ]
+
+
+
+
+#chats.tab-pane.fade.show.active.chats.h-100.overflow-scroll.hide-scrollbar(role='tabpanel', aria-labelledby='pills-chats-tab')
+  +left-side-body-header('Чаты', 'сообщениям')
+  .chats-body.mt-5
+    each chat in chats
+      a.chat.text-decoration-none.d-flex.py-4.ps-3.shadow-sm.w-100.position-relative(href='#')
+        img.avatar.me-4(src = chat.avatar alt="avatar")
+        .chat-body
+          h3.h6.fw-bold.m-0= chat.name
+          p.small.m-0.text-nowrap= chat.message
+        .chat-time.text-muted.small= chat.time

@@ -1,4 +1,16 @@
 
 .menu {
-   height: 72px;
+  height: 79.1px;
+  img {
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+  }
+}
+
+.logo {
+  img {
+    width: 13px;
+    height: 25px;
+  }
 }

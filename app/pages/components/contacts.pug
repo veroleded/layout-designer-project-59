@@ -38,8 +38,8 @@ include ../mixins/left-side-body-header
     }],
   }
 
+#contacts.tab-pane.fade.show.active.contacts.h-100.overflow-scroll.hide-scrollbar(role='tabpanel', aria-labelledby='pills-contacts-tab')
 
-.contacts#contacts.h-100.overflow-scroll.hide-scrollbar
   +left-side-body-header('Контакты', 'контактам')
   .contacts-body
     each persons, word in contacts
@@ -49,5 +49,5 @@ include ../mixins/left-side-body-header
         a.contact.mb-3.text-decoration-none.d-flex.py-4.ps-3.shadow-sm(href='#')
           img.avatar.me-4(src = contact.avatar alt="avatar")
           .contact-body
-            h3.h6.fw-bold.m-0.text-dark= contact.name
-            p.small.m-0.text-secondary= contact.status
+            h3.h6.fw-bold.m-0= contact.name
+            p.small.m-0= contact.status

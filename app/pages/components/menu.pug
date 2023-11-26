@@ -1,1 +1,17 @@
-section.menu.bg-primary.rounded-top-start-4.order-2.order-md-1
+.menu.rounded-top-start-4.order-2.order-md-1.bg-primary.d-flex.flex-nowrap.align-items-center.px-4
+  .logo
+    img(src='./images/icons/logo.svg')
+  ul#pills-tab.nav.flex-nowrap.ms-auto(role='tablist')
+      li.nav-item(role='presentation')
+        button#contacts-tab.nav-link.active.text-light(data-bs-toggle='tab', data-bs-target='#contacts', type='button', role='tab', aria-controls='pills-contacts', aria-selected='true') 
+          img(src="./images/icons/people.svg", alt="")
+          span.small.ms-2.d-none.d-xl-inline Контакты
+      li.nav-item(role='presentation')
+        button#chats-tab.nav-link.text-light(data-bs-toggle='tab', data-bs-target='#pills-chats', type='button', role='tab', aria-controls='pills-chats', aria-selected='false') 
+          img(src="./images/icons/chat.svg", alt="")
+          span.small.ms-2.d-none.d-xl-inline Сообщения
+      li.nav-item(role='presentation')
+        button#profile-tab.nav-link.text-light(data-bs-toggle='tab', data-bs-target='#pills-profile', type='button', role='tab', aria-controls='pills-profile', aria-selected='false') 
+          img(src="./images/icons/person.svg", alt="")
+          span.small.ms-2.d-none.d-xl-inline Профиль
+

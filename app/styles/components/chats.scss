@@ -1,0 +1,45 @@
+
+.chats {
+  @include hide-scrollbar()
+}
+
+.chat-body {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat {
+  width: 100%;
+  transition: all 0.2s linear;
+
+
+  h3 {
+    color: $dark;
+  }
+
+  p {
+    color: $secondary;
+    padding-right: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    h3 {
+      color: $light;
+    }
+
+    p {
+      color: $light;
+    }
+  }
+}
+
+.chat-time {
+  position: absolute;
+  top: 24px;
+  right: 40px
+}

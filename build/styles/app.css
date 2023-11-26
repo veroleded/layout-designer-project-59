@@ -9,6 +9,70 @@
   display: none;
 }
 
+.contact {
+  transition: all 0.2s linear;
+}
+.contact h3, .contact .h3 {
+  color: #343a40;
+}
+.contact p {
+  color: #6c757d;
+}
+.contact:hover {
+  background-color: #4545a5;
+}
+.contact:hover h3, .contact:hover .h3 {
+  color: #fbfbfb;
+}
+.contact:hover p {
+  color: #fbfbfb;
+}
+
+.chats {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.chats::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-body {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat {
+  width: 100%;
+  transition: all 0.2s linear;
+}
+.chat h3, .chat .h3 {
+  color: #343a40;
+}
+.chat p {
+  color: #6c757d;
+  padding-right: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chat:hover {
+  background-color: #4545a5;
+}
+.chat:hover h3, .chat:hover .h3 {
+  color: #fbfbfb;
+}
+.chat:hover p {
+  color: #fbfbfb;
+}
+
+.chat-time {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -12006,7 +12070,17 @@ textarea.form-control-lg {
 }
 
 .menu {
-  height: 72px;
+  height: 79.1px;
+}
+.menu img {
+  width: 25px;
+  height: 25px;
+  filter: invert(1);
+}
+
+.logo img {
+  width: 13px;
+  height: 25px;
 }
 
 .avatar {

@@ -16,6 +16,15 @@ const browsersync = () => {
   watch('./app/**/*.pug', pug2html);
 };
 
+const scripts = () => {
+  return src([
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js.map',
+  ])
+  .pipe(dest('./build/js/'))
+  .pipe(browserSync.stream())
+};
+
 const sass2css = () =>
   src('./app/styles/app.scss')
     .pipe(sass())
@@ -28,7 +37,7 @@ const copyImages = () => src('./app/images/**/*').pipe(dest('build/images')).pip
 const pug2html = () =>
   src('./app/pages/*.pug').pipe(pug()).pipe(dest('build')).pipe(browserSync.stream());
 
-const build = parallel(sass2css, pug2html, copyImages);
+const build = parallel(sass2css, pug2html, copyImages, scripts);
 
 exports.build = build;
 

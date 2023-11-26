@@ -2,3 +2,28 @@
 .contacts {
   @include hide-scrollbar()
 }
+
+.contact {
+
+  transition: all 0.2s linear;
+
+  h3 {
+    color: $dark;
+  }
+
+  p {
+    color: $secondary;
+  }
+
+  &:hover {
+    background-color: $primary;
+
+    h3 {
+      color: $light;
+    }
+
+    p {
+      color: $light;
+    }
+  }
+}
