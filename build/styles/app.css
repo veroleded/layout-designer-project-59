@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.contacts {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.contacts::-webkit-scrollbar {
+  display: none;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -11983,10 +11993,24 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.rounded-top-start-4 {
-  border-top-left-radius: 1rem;
+@media (min-width: 768px) {
+  .rounded-top-start-4 {
+    border-top-left-radius: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .rounded-md-4 {
+    border-radius: 1rem;
+  }
 }
 
 .menu {
-  height: 73px;
+  height: 72px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
 }

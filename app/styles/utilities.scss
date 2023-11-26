@@ -1,3 +1,11 @@
 .rounded-top-start-4 {
-  @include border-top-start-radius(1rem);
+  @include media-breakpoint-up(md) { 
+    @include border-top-start-radius(1rem);
+   }
+}
+
+.rounded-md-4 {
+  @include media-breakpoint-up(md) { 
+    border-radius: 1rem;
+   }
 }
